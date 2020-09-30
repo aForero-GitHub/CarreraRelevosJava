@@ -6,12 +6,11 @@ import java.util.ArrayList;
  *
  * @author Andres Forero
  * @version: 2.0.2
- * @since 03/09/2020
+ * @since 26/09/2020
  */
 public class Equipo {
     /**
-     * Variable que guarda las pósiciones de los corredores 
-     * simulando en que parte de la pista van.
+     * Este Array captura la posicion de los corredores en la pista
      */
     ArrayList<String> pista = new ArrayList<>();
 
@@ -39,24 +38,23 @@ public class Equipo {
     private UbicandoCorredor parametros;
     
     /**
-     * costructor el cual llama a los metodos de la clase 
-     * los cuales llenan el carril y seleccionan el color del equipo
-     * @param nombreEquipo valor del nombre del equipo
-     * @param identificador valor del identificador 
-     * @param parametros valor de los parametros de la carrera
+     * 
+     * @param nombreEquipo
+     * @param identificador
+     * @param parametros 
      */
     public Equipo(String nombreEquipo, short identificador, UbicandoCorredor parametros){
         this.nombreEquipo = nombreEquipo;
         this.identificador = identificador;
         this.parametros = parametros;
-        llenarCarril();
+        PintarCarril();
         colorCorrespondiente();
     } 
     
     /**
      * vector de 101 posiciones Para dibujar la pista
      */
-    private void llenarCarril(){
+    private void PintarCarril(){
         for (int i = 0; i < parametros.getDistancia(); i++) {
            pista.add(i, "_");
         }

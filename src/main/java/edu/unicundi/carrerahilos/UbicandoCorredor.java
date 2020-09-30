@@ -4,7 +4,7 @@ package edu.unicundi.carrerahilos;
  *
  * @author Andres Forero
  * @version: 2.0.2
- * @since 03/09/2020
+ * @since 26/09/2020
  */
 public class UbicandoCorredor {
 

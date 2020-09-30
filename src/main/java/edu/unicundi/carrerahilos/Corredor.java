@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  *
  * @author Andres Forero
  * @version: 2.0.2
- * @since 03/09/2020
+ * @since 26/09/2020
  */
 public class Corredor extends Thread {
 
@@ -70,7 +70,7 @@ public class Corredor extends Thread {
     }
 
     /**
-     * Hace la notificacion entre Hilos
+     * le notifica a los otros hilos(corredores) si ya pueden iniciar
      */
     private void relevo() {
         if (identificador == 1) {

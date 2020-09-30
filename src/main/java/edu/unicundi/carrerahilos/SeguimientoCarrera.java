@@ -9,7 +9,7 @@ import java.util.logging.Logger;
  * 
  * @author Andres Forero
  * @version: 2.0.2
- * @since 03/09/2020
+ * @since 26/09/2020
  */
 public class SeguimientoCarrera extends Thread {
     /**
@@ -115,21 +115,22 @@ public class SeguimientoCarrera extends Thread {
         //Si el equipo 1   llegan primero---------------------------------------     
             
         } else if (valor1 != "°°°") {
-            System.out.println("Gano el Equipo " + equipo1.getColorEquipo() + 
-                    equipo1.getNombreEquipo());
+            System.out.println("Gano el Equipo " + equipo1.getColorEquipo() + "°°° "
+                    + equipo1.getNombreEquipo() + " °°°");
             ganador = true;
             
         //Si el equipo 2 llegan primero-----------------------------------------   
             
         } else if (valor2 != "°°°") {
-            System.out.println("Gano el Equipo " + equipo2.getColorEquipo() + 
-                    equipo2.getNombreEquipo());
+            System.out.println("Gano el Equipo " + equipo2.getColorEquipo() + "°°° "
+                   + equipo2.getNombreEquipo()+ " °°°");
             ganador = true;
             
         //Si el equipo 3 llegan primero-----------------------------------------
             
         } else if (valor3 != "°°°") {
-            System.out.println("Gano el Equipo " + equipo3.getColorEquipo() + equipo3.getNombreEquipo());
+            System.out.println("Gano el Equipo " + equipo3.getColorEquipo() + "°°° " 
+                    + equipo3.getNombreEquipo() + " °°°");
             ganador = true;
         }
 
